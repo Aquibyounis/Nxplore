@@ -4,6 +4,7 @@ import './Home.css';
 import Sidenav from '../../Components/Sidenav/Sidenav';
 import Projects from '../../Components/Projects/Projects';
 import Rooms from '../../Components/Rooms/Rooms';
+import Viz from '../../Pages/VIZ/Viz';
 
 const Home = () => {
   const [activeLink, setActiveLink] = useState("Dashboard");
@@ -22,7 +23,9 @@ const Home = () => {
         <div className={`panel ${activeLink === "Rooms" ? 'visible' : 'hidden'}`}>
           <Rooms />
         </div>
-        {/* Add more if needed */}
+        <div className={`panel ${activeLink === "Codeviz" ? 'visible' : 'hidden'}`}>
+          <Viz />
+        </div>
       </div>
     </div>
   );

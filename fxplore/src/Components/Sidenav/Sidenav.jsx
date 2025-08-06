@@ -51,6 +51,12 @@ const Sidenav = ({ activeLink, setActiveLink }) => {
           <i className="fa-solid fa-code"></i> Projects
         </li>
         <li
+          className={`sidenav-link ${activeLink === "Codeviz" ? 'active' : ''}`}
+          onClick={() => setActiveLink("Codeviz")}
+        >
+          <i className="fa-solid fa-code"></i> Codeviz
+        </li>
+        <li
           className={`sidenav-link logout ${activeLink === "Logout" ? 'active' : ''}`}
           onClick={() => setActiveLink("Logout")}
         >
