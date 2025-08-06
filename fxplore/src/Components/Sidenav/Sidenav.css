@@ -1,0 +1,60 @@
+.sidenav {
+  height: 100vh;
+  background-color: #1f2d3d;
+  color: white;
+  padding: 20px;
+  position: relative;
+  user-select: none;
+  min-width: 180px;
+  max-width: 400px;
+  transition: width 0.2s ease;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sidenav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.sidenav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 14px;
+  transition: background-color 0.2s;
+  border-radius: 10px;
+}
+
+.sidenav-link:hover {
+  background-color: #324055;
+}
+
+.sidenav-link.active {
+  background-color: #3f4d61;
+  font-weight: bold;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+
+/* Resizer handle */
+.resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100%;
+  cursor: ew-resize;
+  background-color: transparent;
+}

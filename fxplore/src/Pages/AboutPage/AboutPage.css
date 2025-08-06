@@ -1,0 +1,379 @@
+/* General Container */
+.about-container {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #1f2d3d;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 50px 20px 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 6rem;
+  color: #2b4f81;
+  background: linear-gradient(45deg, #0073ff, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  animation: fadein 1s ease-in-out;
+}
+@keyframes fadein {
+  from{
+    transform: translate(0,-100px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+.left-heo,.right-heo{
+  background-color: #0d2a47fc;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-direction: column;
+  animation: wiggle 1s infinite ease-in-out;
+  padding: 1rem 1rem;
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  border: 3px solid #006aff;
+  border-top: none;
+  box-shadow: 0px 30px 50px 15px rgba(14, 56, 99, 0.452);
+}
+.left-heo{
+  left: 3%;
+  top: 25%;
+  animation: wiggle 1.25s infinite ease-in-out;
+}
+.right-heo{
+  right: 3%;
+  top: 40%;
+
+}
+@keyframes wiggle {
+  0% { transform: translate(0,2px); }
+  50%{ transform: translate(0,-2px); }
+  100% { transform: translate(0,2px); }
+}
+.line5,.line6{
+  width: 4%;
+  height: 100svh;
+  border-radius: 100px;
+  background-color: #0d2a47fc;
+  z-index: -10;
+}
+.line5{
+  position: absolute;
+  top: -90svh;
+}
+.line6{
+  position: absolute;
+  top: -90svh;
+}
+.subtitle {
+  font-size: 1.5rem;
+  color: #4a678d;
+  font-weight: 600;
+}
+
+/* Mission Section */
+.mission-section {
+  max-width: 80svw;
+  margin: 60px 10% auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 2em;
+}
+
+.mission-section h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: #2b4f81;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: center;
+}
+
+.img-mission {
+  border: 2px solid rgb(70, 70, 70);
+  background-color: white;
+  width: 100%;
+  height: 75svh;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border: 2px solid #fbfdff;
+  box-shadow: 0px 30px 100px 10px rgba(0, 0, 0,0.87);
+}
+.CODE{
+  background-color: #344f6e;
+}
+.ROOM{
+  background-color: #1f2d3d;
+}
+.VIZ{
+  background-color: #7990ab;
+}
+.line1,.line2,.line3,.line4{
+  width: 50%;
+  height: 5px;
+  border-radius: 100px;
+  background-color: rgb(42, 20, 82);
+  z-index: -1;
+  box-shadow: 0px 0px 50px 10px rgb(0, 0, 0,0.5);
+
+}
+.line1{
+  position: relative;
+  right: 40%;
+  bottom: -50%;
+  transform: rotate(45deg);
+}
+.line2{
+  position: relative;
+  left: 90%;
+  bottom: -50%;
+
+}
+.line3{
+  position: relative;
+  left: -40%;
+  bottom: -50%;
+
+}
+.line4{
+  position: relative;
+  left: 90%;
+  bottom: -50%;
+  transform: rotate(45deg);
+
+}
+
+.chotanav{
+  background-color: white;
+  border: 2px solid #0f2c41;
+  border-radius: 50px;
+  gap: 50px;
+  padding: 5px 10px;
+  color: #e3f0ff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cbtn {
+  padding: 10px 18px;
+  background: #fbfbfb;
+  color: #152843;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cbtn:hover {
+  background-color: #a9c4ec;
+  color: #1d3b6a;
+}
+
+.cbtn.active {
+  background-color: #0b1e46;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translate(0px,1px);
+}
+/* Concept Section */
+.concept-section {
+  background-color: #ffffff;
+  margin: 40px auto;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.concept-icon {
+  color: #5c6ac4;
+  margin-bottom: 20px;
+}
+
+.concept-section h2 {
+  color: #2b4f81;
+  margin-bottom: 15px;
+}
+
+.concept-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 20px;
+  background-color: #16324e;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  color: #c5cfdd;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 25px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgb(7, 146, 206);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(45deg, #c77999, #c7d2fe);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #4b7be5;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2b4f81;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+/* Vision Section */
+.vision-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.vision-section h2 {
+  font-size: 2rem;
+  color: #2b4f81;
+  margin-bottom: 20px;
+}
+
+.vision-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* CTA Footer */
+.cta-section {
+  background: #d0e2ff;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid #cfdde9;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: #2b4f81;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #4b7be5;
+  color: white;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3759b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .mission-section h2,
+  .concept-section h2,
+  .features-section h2,
+  .vision-section h2,
+  .cta-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .left-heo, .right-heo {
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .line5, .line6 {
+    width: 90%;
+    height: 3px;
+    top: -50svh;
+  }
+  
+}
