@@ -1,5 +1,5 @@
 .sidenav {
-  height: 100vh;
+  height: 90vh;
   background-color: #1f2d3d;
   color: white;
   padding: 20px;
@@ -8,16 +8,33 @@
   min-width: 180px;
   max-width: 400px;
   transition: width 0.2s ease;
-  overflow: hidden;
   box-sizing: border-box;
   margin: 10px;
   border-radius: 10px;
 }
-
+.arrow{
+  position: absolute;
+  right: -10px;
+  height: 20px;
+  width: 20px;
+  color: whitesmoke;
+  background-color: rgb(27, 30, 35);
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.199);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
 .sidenav-logo {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 30px;
+}
+.sidenav-logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 .sidenav-links {
   display: flex;
@@ -25,6 +42,7 @@
   gap: 12px;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .sidenav-link {
@@ -34,6 +52,14 @@
   padding: 10px 14px;
   transition: background-color 0.2s;
   border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.logout{
+  position: absolute;
+  bottom: 5%;
 }
 
 .sidenav-link:hover {
